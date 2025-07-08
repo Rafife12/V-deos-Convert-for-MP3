@@ -1,0 +1,15 @@
+-- Criação do banco de dados
+CREATE DATABASE VideoToAudio;
+GO
+
+-- Uso do banco de dados
+USE VideoToAudio;
+GO
+
+-- Criação da tabela 'conversoes'
+CREATE TABLE conversoes (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    nome_video NVARCHAR(255) NOT NULL,
+    nome_audio NVARCHAR(255) NOT NULL,
+    data DATETIME NOT NULL
+);
